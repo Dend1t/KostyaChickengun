@@ -1,0 +1,148 @@
+body {
+    font-family: Impact, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;    
+}
+
+.header_container {
+    background: linear-gradient(to right, purple, palevioletred);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_right ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    font-size: 150%;
+}
+
+.list_item{
+    color: white;
+    text-decoration: none;
+}
+
+
+footer {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+}
+
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2rem;
+    scroll-margin-top: 16rem;
+}
+
+.material-size {
+    max-width: 100%;
+}
+
+.name_container, .info_container, .contacts_container {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 1rem;
+    a {
+        color: cornflowerblue;
+        font-size: 300%;
+    }
+}
+
+.info_container {
+    font-size: 200%;
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.task {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 250%;
+}
+
+p {
+    font-size: 150%;
+}
+
+
+.info_list {
+    list-style-position: inside;
+}
+
+.animated-list {
+    animation: color-list 10s infinite;
+}
+
+.animated {
+    animation: color-change 5s infinite;
+    transition: 1s;
+}
+
+.animated:hover {
+    font-size: 300%;
+    transition: 1s;
+}
+
+@keyframes color-list {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: blue;
+    }
+    80% {
+        color: purple;
+    }
+    100% {
+        color: red;
+    }
+}
