@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Impact-regular";
+    src: url("materials/impact-regular.ttf");
+}
+
 body {
-    font-family: Impact, serif;
+    font-family: Impact-regular, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
