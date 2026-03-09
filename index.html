@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Визитка</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="materials/единственный%20репер.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class='header_container'>
             <div class='header_logo'>
-                <img class="material-size" src="materials/mimimi.gif" alt="Логотип">
+                <img id="header_logo" src="materials/mimimi.gif" alt="Логотип">
             </div>
 
             <div class='header_right'>
                 <ul>
                     <li><a href="#name" class="list_item">ФИО</a></li>
                     <li><a href="#info" class="list_item">Информация</a></li>
-                    <li><a href="#tasks" class="list_item">Мои работы</a></li>
+                    <li><a href="#tasks" class="list_item">Работы</a></li>
                     <li><a href="#contacts" class="list_item">Контакты</a></li>
                 </ul>
             </div>
@@ -31,28 +32,29 @@
                 
                 <h1 class="animated">ПОНОМАРЕВ КОНСТАНТИН МИХАЙЛОВИЧ</h1>
                 <p>(наведитесь на имя)</p>
+                <p>(дизайн сайта адаптивный, попробуйте разное разрешение)</p>
             </div>
         </section>
 
         <section id="info">
             <h1>ОБО МНЕ</h1>
             <div class='info_container'>
-
                 <p>Я мастер своего дела, а именно:</p>
 
                 <ol class="info_list">
-                    <li class="animated-list">лежат</li>
-                    <li class="animated-list">не делат ничего</li>
-                    <li class="animated-list">отдых</li>
-                    <li class="animated-list">иногда делаю чтото интересное</li>
-                    <li class="animated-list">в основном ем</li>
+                    <li>лежат</li>
+                    <li>не делат ничего</li>
+                    <li>отдых</li>
+                    <li>иногда делаю чтото интересное</li>
+                    <li>в основном ем</li>
                 </ol>
 
                 <p>МОЕ ЛЮБИМОЕ ФОТО:</p>
-                <img class="material-size" src="materials/israel.jpg" alt="Мое любимое фото">
+                <img class="photo-size" src="materials/israel.jpg" alt="Мое любимое фото">
                 
                 <p>ПРИМЕР КАК Я МОГУ ВСТАВАЛЯТЬ ВИДЕО С ЮТУБА:</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wsZsrfG9BJ8?si=opmCZ0odIcOqYWYS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/wsZsrfG9BJ8?si=opmCZ0odIcOqYWYS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -62,9 +64,21 @@
                 <div class="tasks">
                     <div class="task">
                         <video class="material-size" controls src="materials/Halloween2025.mp4"></video>
-                        <h1>Halloween 2025</h1>
+                        <h1 class="project-name">Halloween 2025</h1>
                         <h2>Описание:</h2>
                         <p>Это видео я делал к неправославному празднику потому что мне было нечего делать<br>Получилась такая вот штука</p>
+                    </div>
+                    <div class="task">
+                        <video class="material-size" controls src="materials/Свинопад.mp4"></video>
+                        <h1 class="project-name">Игра "Свиной побег"</h1>
+                        <h2>Описание:</h2>
+                        <p>Игра в стиле Endless Runner, где свинья убегает от ковбоев<br>Игра была загружена на яндекс игры и после удалена из-за того, что в нее никто не играл<br>Ссылка на запуск игры через яндекс консоль: <a class="project-link" href="https://yandex.ru/games/app/434675?draft=true&lang=ru" target="_blank">Жмать</a></p>
+                    </div>
+                    <div class="task">
+                        <img class="material-size" src="materials/Турнир%20Победители.png" alt="Картинка турнир CLASH ROYALE">
+                        <h1 class="project-name">Турнир по Clash Royale</h1>
+                        <h2>Описание:</h2>
+                        <p>Третью работу я не вспомнил, но мне надо было ее вставить для показа возможностей адаптивного дизайна<br>Недавно делали турнир клэш роял вот его победители<br>Стоит попробовать разные размеры окна</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +87,7 @@
         <section id="contacts">
             <h1>КОНТАКТЫ</h1>
             <div class='contacts_container'>
-                <a href="mailto:fleksermiha@gmail.com">Почта для обратной связи: fleksermiha@gmail.com</a>
+                <a class="mail-link" href="mailto:fleksermiha@gmail.com">Почта для обратной связи: fleksermiha@gmail.com</a>
             </div>
         </section>
     </main>

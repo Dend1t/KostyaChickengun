@@ -9,12 +9,16 @@ body {
 header {
     position: sticky;
     top: 0;
-    width: 100%;    
+    z-index: 1;
+}
+
+#header_logo {
+    max-height: 8rem;
+    max-width: 100%;
 }
 
 .header_container {
     background: linear-gradient(to right, purple, palevioletred);
-    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,9 +26,8 @@ header {
 
 .header_right ul {
     display: flex;
-    justify-content: right;
     list-style: none;
-    padding: 0;
+    padding: 1.5rem;
     gap: 1rem;
     font-size: 150%;
 }
@@ -35,38 +38,36 @@ header {
 }
 
 
-footer {    
-    display: flex;
+footer {
     justify-content: center;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 
 main {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 section {
-    margin-bottom: 2rem;
-    scroll-margin-top: 16rem;
+    scroll-margin-top: 14rem;
+}
+
+.photo-size {
+    max-width: 50%;
 }
 
 .material-size {
     max-width: 100%;
 }
 
-.name_container, .info_container, .contacts_container {
+.name_container, .info_container, .contacts_container, .task {
     background-color: #f1f1f1;
     border-radius: 10px;
     padding: 1rem;
-    a {
-        color: cornflowerblue;
-        font-size: 300%;
-    }
 }
 
 .info_container {
@@ -77,13 +78,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    grid-gap: 1rem;
 }
 
 .task {
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    padding: 0.5rem;
+    flex: 1 1 calc(28% - 1rem);
+    max-width: calc(28% - 1rem);
 }
 
 h1 {
@@ -95,12 +95,30 @@ p {
     font-size: 150%;
 }
 
+iframe {
+    height: 378px;
+    width: 672px;
+}
+
+
+.mail-link {
+    color: cornflowerblue;
+    font-size: 300%;
+}
+
+.project-link {
+    color: cornflowerblue;
+}
+
+.project-name {
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
 
 .info_list {
     list-style-position: inside;
-}
-
-.animated-list {
     animation: color-list 10s infinite;
 }
 
@@ -144,5 +162,34 @@ p {
     }
     100% {
         color: red;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    iframe {
+        height: 283px;
+        width: 504px;
+    }
+    .task {
+        flex: 1 1 calc(45% - 1rem);
+        max-width: calc(45% - 1rem);
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+    iframe {
+        height: 189px;
+        width: 336px;
+    }
+    .task {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
